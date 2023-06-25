@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-bool binarySearch(int array[100], int numberOfElements, int keyNumber);
+bool binarySearch(int *array, int numberOfElements, int keyNumber);
 
-bool binarySearch(int array[100], int numberOfElements, int keyNumber) {
+bool binarySearch(int *array, int numberOfElements, int keyNumber) {
   int low = 0;
   int high = numberOfElements;
 
