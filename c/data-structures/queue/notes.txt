@@ -1,0 +1,13 @@
+Queue is a FIFO structure, first in first out;
+Queue is a Single Linked List
+
+Example: A(head) -> B -> C -> D(tail) -- We want to insert E here
+  D must point to E and update our tail to point to E;
+  tail.next = E
+  tail = E;
+
+Pop A: Head points to B, return A
+  head = head.next
+  return h.value (A)
+
+  
