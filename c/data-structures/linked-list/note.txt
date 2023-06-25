@@ -1,0 +1,26 @@
+Each node must not only have it's value, but an pointer to the next and previous node on the list:
+  Node<T>  {
+    value: T;
+    next?: Node<T>
+    prev?: Node<T>
+  }
+
+Insertion: Insert F between A and B. A points to B.
+  A (next) will now point to F and F(prev) will point to A;
+  B (prev) will now point to F and F(next) will point to B;
+    -- A -> F;
+    -- F -> B;
+    -- A <- F;
+    -- F <- B;
+
+Deletion: Delete F between A and B. A and B points to F;
+  A (next) will now point to B and B(prev) will now point to A;
+  Will have to go from F, to B, break the link with F and points to A;
+  -- F -> B -/> F -> A;
+  -- F -> A -/> F -> B;
+
+Head: Gets the first item on the list;
+Tail: Gets the last value on the list;
+
+Prepend: Insert before first value;
+Append: Insert after last value;
