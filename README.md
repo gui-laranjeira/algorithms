@@ -1,5 +1,5 @@
 # algorithms
-Study repo of algorithms and their implementations.
+Study repo of data structures and algorithms.
 
 ## Goals (Work in progress)
 
